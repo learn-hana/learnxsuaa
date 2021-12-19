@@ -15,6 +15,9 @@
         "start": "cds run",
         "undeploy": "cf undeploy learnxsuaa --delete-services --delete-service-keys"
     },
+    "engines": {
+        "node": "14.X"
+    },
     "eslintConfig": {
         "extends": "eslint:recommended",
         "env": {
@@ -47,6 +50,9 @@
         "requires": {
             "db": {
                 "kind": "hana"
+            },
+            "uaa": {
+                "kind": "xsuaa"
             }
         },
         "hana": {
